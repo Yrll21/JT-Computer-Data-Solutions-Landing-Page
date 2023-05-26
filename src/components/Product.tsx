@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
 
 import config from '../config/index.json';
@@ -16,7 +17,7 @@ const Product = () => {
           {product.title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
+              className={'text-primary'}
             >
               {word}{' '}
             </span>

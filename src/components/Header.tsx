@@ -7,21 +7,11 @@ import { Link } from 'react-scroll';
 import config from '../config/index.json';
 
 const Menu = () => {
-  const { navigation, company, callToAction } = config;
+  const { navigation, company } = config;
   const { name: companyName, logo } = company;
 
   return (
     <>
-      <svg
-        className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background transform translate-x-1/2`}
-        fill="currentColor"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
-        <polygon points="50,0 100,0 50,100 0,100" />
-      </svg>
-
       <Popover>
         <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
           <nav
@@ -62,7 +52,7 @@ const Menu = () => {
                 href="#"
                 className={`font-medium text-primary hover:text-secondary`}
               >
-                Call to action
+                Get Started
               </a>
             </div>
           </nav>
@@ -112,12 +102,6 @@ const Menu = () => {
                   </Link>
                 ))}
               </div>
-              <a
-                href={callToAction.href}
-                className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
-              >
-                {callToAction.text}
-              </a>
             </div>
           </Popover.Panel>
         </Transition>

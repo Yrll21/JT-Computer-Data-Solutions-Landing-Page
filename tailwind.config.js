@@ -16,13 +16,16 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
     },
+    fontFamily: {
+      sans: ['Roboto', 'sans-serif'],
+    },
     extend: {
       colors: {
-        primary: '#ec4755',
+        primary: '#ED2B2A',
         secondary: '#a12c34',
         tertiary: '#99a0a3',
         border: '#1a2e35',
-        background: '#ffffff',
+        background: '#F9F5EB',
       },
       animation: {
         vote: 'vote 1s ease-in-out',
